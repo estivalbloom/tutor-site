@@ -53,16 +53,22 @@ body {
 .page-header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 12px 20%;
 	background-color: var(--accent-bg);
 	border-bottom: 2px solid var(--text);
+	flex-wrap: wrap;
 }
 
 .avatar {
 	width: 192px;
 	border-radius: 256px;
 	border: 2px solid var(--text);
+}
+
+h1 {
+	text-align: center;
+	line-height: 34px;
 }
 
 h1,
@@ -128,6 +134,9 @@ a {
 	margin: 24px;
 	@media (max-width: 1024px) {
 		width: 256px;
+	}
+	@media (max-width: 600px) {
+		display: none
 	}
 }
 
